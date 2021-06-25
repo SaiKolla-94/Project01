@@ -47,16 +47,6 @@ resource "aws_internet_gateway" "project01-gw" {
 }
 
 # route tables
-resource "aws_route_table" "main-public" {
-  vpc_id = aws_vpc.project01vpc.id
-  route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = aws_internet_gateway.project01vpc-gw.id
-  }
 
-  tags = {
-    Name = "main-public-1"
-  }
-}
 
 # route associations public
