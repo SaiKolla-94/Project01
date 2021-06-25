@@ -48,5 +48,4 @@ resource "aws_internet_gateway" "project01-gw" {
 
 # route tables
 
-
 # route associations public
