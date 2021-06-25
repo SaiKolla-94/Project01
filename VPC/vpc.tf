@@ -15,7 +15,7 @@ resource "aws_vpc" "project01vpc" {
 
 resource "aws_subnet" "project01-privatesubnet-1" {
   vpc_id                  = aws_vpc.project01vpc.id
-  cidr_block              = "10.0.4.0/28"
+  cidr_block              = "10.0.0.0/28"
   map_public_ip_on_launch = "false"
   availability_zone       = "us-east-1a"
 
@@ -26,7 +26,7 @@ resource "aws_subnet" "project01-privatesubnet-1" {
 
 resource "aws_subnet" "project01-privatesubnet-2" {
   vpc_id                  = aws_vpc.project01vpc.id
-  cidr_block              = "10.0.5.0/28"
+  cidr_block              = "10.0.0.0/28"
   map_public_ip_on_launch = "false"
   availability_zone       = "us-east-1b"
 
