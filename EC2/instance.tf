@@ -1,4 +1,4 @@
-resource "aws_instance" "test" {
+resource "aws_instance" "web" {
   count = "${var.instance_count}
   ami = "${lookup(var.ami,AWS_REGION)}"
   instannce_type = "${var.instannce_type}"
